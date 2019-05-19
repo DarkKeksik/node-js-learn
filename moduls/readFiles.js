@@ -1,7 +1,7 @@
 let fs = require("fs");
 
 // Синхронное чтение файла (подобный путь, так как файл берется относит. index)
-let way = "./moduls/source/";
+let way = `${__dirname}/source/`;
 // let fileReaded = fs.readFileSync(`${way}testInfo.txt`, 'utf8');
 // console.log(`Проверить файл: ${fileReaded}`);
 
