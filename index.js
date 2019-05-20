@@ -7,7 +7,8 @@
 // Тестовое подключение модулей
 let things = require("./moduls/mod1"),
     eventsMod = require("./moduls/events");
-    fileReaded = require("./moduls/readFiles");
+    fileReaded = require("./moduls/readFiles"),
+    workWithFolders = require("./moduls/workWithFiles");
 
 // Вывод функции из модуля
 // console.log("Тестирую переменные из модуля", things);
