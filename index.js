@@ -9,7 +9,8 @@ let things = require("./moduls/mod1"),
     eventsMod = require("./moduls/events");
     fileReaded = require("./moduls/readFiles"),
     workWithFolders = require("./moduls/workWithFiles"),
-    server = require("./moduls/server");
+    lotInfo = require("./moduls/divideIntoParts");
+    // server = require("./moduls/server");
 
 // Вывод функции из модуля
 // console.log("Тестирую переменные из модуля", things);
