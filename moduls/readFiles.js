@@ -9,10 +9,13 @@ let way = `${__dirname}/source/`;
 // let infoForNewFile = `${fileReaded}\n Да, здравствует новый файл`;
 // fs.writeFileSync(`${way}testInfoNew.txt`, infoForNewFile);
 
-// Асинхронная чтение/запись файла с каллбэком
+// Асинхронная чтение/запись/удаление файла с каллбэком
 fs.readFile(`${way}testInfo.txt`, "utf8", (err, data) => {
     console.log(`Файл был прочитан, результат: ${data}`);
 });
 fs.writeFile(`${way}testInfoNew.txt`, "Hi asych write", (err, data) => {
     console.log("Файл был создан/записан");
+});
+fs.unlink(`${way}testInfoNew.txt`, () => {
+  console.log("Файл успешно удален");
 });
