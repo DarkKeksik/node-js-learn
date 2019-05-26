@@ -1,7 +1,7 @@
 let fs = require("fs");
 
 // Директория под данные
-let way = `${__dirname}/source/`;
+let way = `${__dirname}/source/txt/`;
 
 // Синхронное чтение файла (подобный путь, так как файл берется относит. index)
 // let fileReaded = fs.readFileSync(`${way}testInfo.txt`, 'utf8');

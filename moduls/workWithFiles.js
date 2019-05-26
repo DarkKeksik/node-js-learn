@@ -1,5 +1,5 @@
 let fs = require("fs");
-let way = `${__dirname}/source/`;
+let way = `${__dirname}/source/txt`;
 
 // Синхронное создание файла (так же возможность записи в файл)
 // let infoForNewFile = `${fileReaded}\n Да, здравствует новый файл`;
