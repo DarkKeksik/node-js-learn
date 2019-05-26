@@ -7,10 +7,10 @@ let http = require("http"),
           // readFile.on("data", (chank) => {
           //     res.end(chank);
           // });
-          fs.createReadStream(`${__dirname}/source/testIndex.html`).pipe(res);
+          fs.createReadStream(`${__dirname}/views/testIndex.html`).pipe(res);
       } else {
           res.writeHead(404, {'Content-Type': 'text/html; charset=utf-8'});
-          fs.createReadStream(`${__dirname}/source/404.html`).pipe(res);
+          fs.createReadStream(`${__dirname}/views/404.html`).pipe(res);
       }
 
       // Логирование

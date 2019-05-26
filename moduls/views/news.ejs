@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title><%= newsId %></title>
+</head>
+<body>
+  <div class="" style="text-align: center;">
+    <h1>Новость <%= newsId %></h1>
+    <p><%= testParam %></p>
+    <p>
+      <span>Первый: </span><%= obj %>
+    </p>
+    <p>
+      <span>Второй: </span><%= obj.second %>
+    </p>
+  </div>
+
+  <div class="">
+      <ul>
+        <% obj.third.forEach((item) => {%>
+          <li> <%= item %> </li>
+        <% }); %>
+      </ul>
+  </div>
+</body>
+</html>

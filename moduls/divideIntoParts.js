@@ -7,6 +7,6 @@ let moreInform = fs.createReadStream(`${__dirname}/source/lotInfo.txt`),
 
 // Событие дата срабатывает, когда подгружается часть информации
 moreInform.on("data", (chunk) => {
-    console.log(`###################\n\n\n ${chunk}`);
+    // console.log(`###################\n\n\n ${chunk}`);
     writeInform.write(chunk);
 });
