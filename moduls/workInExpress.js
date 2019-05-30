@@ -1,5 +1,7 @@
 let express = require("express"),
-    app = express(); // Импортировать функции в эту переменную
+    app = express(), // Импортировать функции в эту переменную
+    bodyParser = require("body-parser"), // Парсим форму
+    urlBodyParser = bodyParser.urlencoded( {extended: false} );
 
 // Указываем какой движок используем для шаблонизации
 app.set("view engine", "ejs");
@@ -30,4 +32,15 @@ app.get("/news/:id", (req, res) => {
   );
 });
 
-app.listen(3000, "192.168.1.103");
+// О нас
+app.get("/about", (req, res) => {
+  res.render(`${__dirname}/views/about`);
+});
+
+app.post("/about", urlBodyParser, (req, res) => {
+  if(!req.body) return res.sendStatus(400);
+  console.log(req.body);
+  res.render(`${__dirname}/views/formSuccess`, {data: req.body});
+});
+
+app.listen(3000, "192.168.1.104");
