@@ -14,12 +14,12 @@ app.get("/", (req, res) => {
   // Послать ответ
   // res.sendFile(`${__dirname}/views/testIndex.html`);
   res.render(`${__dirname}/views/index`);
-  console.log("awdawdawd"+__filename);
 });
 
 // Новости
-app.get("/news/:id", (req, res) => {
+app.get("/news", (req, res) => {
   // res.send(`It's news ${req.params.ids}`); // Динам. ответ по переменной id
+
   let obj = {
     "first": "123",
     "second": "234",
@@ -43,4 +43,4 @@ app.post("/about", urlBodyParser, (req, res) => {
   res.render(`${__dirname}/views/formSuccess`, {data: req.body});
 });
 
-app.listen(3000, "192.168.1.104");
+app.listen(3000, "localhost");

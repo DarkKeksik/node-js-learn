@@ -3,13 +3,15 @@
   <head>
     <title>О нас</title>
     <meta charset="utf-8" />
+    <link rel="stylesheet" href="source/css/style.css">
   </head>
   <body>
-    <form class="" action="/about" method="post">
-      <input type="text" name="Name" value="" placeholder="Имя" />
-      <input type="text" name="Phone" value="" placeholder="Телефон" />
-      <input type="text" name="Email" value="" placeholder="Почта" />
-      <button type="submit" name="button">Отправляем</button>
-    </form>
+    <% include chanks/menu.ejs %>
+    <form action="/about" method="post">
+        <input type="text" name="Name" value="" placeholder="Имя" />
+        <input type="text" name="Phone" value="" placeholder="Телефон" />
+        <input type="text" name="Email" value="" placeholder="Почта" />
+        <button type="submit" name="button">Отправляем</button>
+      </form>
   </body>
 </html>

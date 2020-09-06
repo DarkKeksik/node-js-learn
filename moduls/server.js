@@ -17,5 +17,5 @@ let http = require("http"),
       console.log(`URL страницы: ${req.url}`);
     });
 
-server.listen(3000, "192.168.1.103");
+server.listen(3000, "localhost");
 console.log("Начинаем слушать порт 3000");
